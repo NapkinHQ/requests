@@ -91,7 +91,7 @@ setup(
     author_email=about["__author_email__"],
     url=about["__url__"],
     packages=["requests"],
-    package_data={"": ["LICENSE", "NOTICE"]},
+    package_data={"": ["LICENSE", "NOTICE"], "requests": ["cacert.pem"]},
     package_dir={"": "src"},
     include_package_data=True,
     python_requires=">=3.8",
